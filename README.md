@@ -33,13 +33,16 @@ To list all instances of a class: all User
 To update the attributes of an object: update User 12345 email "newemail@example.com"
 To delete an object: destroy User 12345
 
-Authors
+Authors:
+
 We greatly value collaborative efforts! The individuals who have contributed to this repository are listed in the AUTHORS file. If you're part of the team and your name is missing, please feel free to update the file.
 
-Unit Tests
+Unit Tests:
+
 Testing is an integral part of our development process. We've incorporated unit tests to ensure the functionality and reliability of our code. All files, classes, and functions have been rigorously tested.
 
-BaseModel Class
+BaseModel Class:
+
 The BaseModel class lays the foundation for other classes in our project. It defines common attributes and methods that will be inherited by other classes. Here's a glimpse of the BaseModel class:
 
 Public Instance Attributes
