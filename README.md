@@ -3,18 +3,24 @@
 0x00 AirBnB Clone - The Console
 AirBnB Clone
 
-Welcome to 0x00 AirBnB Clone - The Console repository! 🏠✨ This project is an exciting group endeavor where we build the foundation of our very own AirBnB clone. The console serves as the first step towards creating a complete web application.
+Welcome to 0x00 AirBnB Clone - The Console repository! 🏠✨ 
 
-Project Description
+This project is an exciting group endeavor where we build the foundation of our very own AirBnB clone. The console serves as the first step towards creating a complete web application.
+
+Project Description:
+
 In this repository, we'll be creating a command-line interface (CLI) for managing AirBnB objects. This CLI will help us handle various tasks related to our AirBnB clone project. By completing this first step, we'll set the stage for the subsequent projects that involve HTML/CSS templating, database storage, API integration, and front-end development.
 
-Command Interpreter
+Command Interpreter:
+
 The command interpreter is a pivotal part of our project. It empowers us to interact with our AirBnB objects through the command line. To get started, follow these steps:
 
 Clone the repository to your local machine.
 Navigate to the project directory.
 Launch the console by running ./console.py.
-Usage
+
+Usage:
+
 Our command interpreter offers a variety of commands to manage AirBnB objects. Some of the available commands include:
 
 create: Creates a new instance of a specified class.
@@ -54,7 +60,8 @@ save(): Updates the updated_at attribute with the current datetime.
 to_dict(): Returns a dictionary containing all attributes of the instance. This method also converts created_at and updated_at to string objects in ISO format.
 This class is fundamental to our serialization and deserialization process, as it provides a dictionary representation of our objects.
 
-Create BaseModel from Dictionary
+Create BaseModel from Dictionary:
+
 We've enhanced our BaseModel class to support conversion from a dictionary representation back to an instance. The flow of serialization-deserialization is now as follows:
 
 <class 'BaseModel'> -> to_dict() -> <class 'dict'> -> <class 'BaseModel'>
@@ -64,7 +71,9 @@ To achieve this, update the models/base_model.py file:
 Implement the __init__(self, *args, **kwargs) method to allow reconstruction from the dictionary representation.
 If kwargs is not empty, create attributes based on the keys and values of the dictionary. Remember to handle datetime conversions for created_at and updated_at.
 If kwargs is empty, create id and created_at as before.
-Store First Object
+
+Store First Object:
+
 Now we can recreate a BaseModel from another one using a dictionary representation:
 
 <class 'BaseModel'> -> to_dict() -> <class 'dict'> -> <class 'BaseModel'>
