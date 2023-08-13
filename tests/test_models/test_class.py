@@ -29,7 +29,7 @@ class TestClassDocumentation():
             doc = self.name.__doc__
             self.tests.assertGreaterEqual(len(doc), 1)
 
-    def pep8(self, files):
+    def pep8(s, files):
         """Test linter pep8 over the files"""
         pep8style = pep8.StyleGuide(quiet=True)
         result = pep8style.check_files(files)
