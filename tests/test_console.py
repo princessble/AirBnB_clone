@@ -16,7 +16,7 @@ class test_console(unittest.TestCase):
     def test_quit(self):
         """ test for the method quit
         """
-        con = self.()
+        con = self.create()
         self.assertTrue(con.onecmd("quit"))
 
     def test_EOF(self):
